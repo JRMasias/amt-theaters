@@ -1,29 +1,29 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Cormorant_Garamond, Geologica } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: [ "latin" ],
+const corm = Cormorant_Garamond({
+  weight: [ "400", "700" ],
+  subsets: [ "latin" ]
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: [ "latin" ],
+export const geo = Geologica({
+  weight: [ "400", "700" ],
+  subsets: [ "latin" ]
 });
 
 export const metadata: Metadata = {
   title: "AMT Theaters",
-  description: "A fake movie theater web app",
+  description: "A fully functional fake movie theater web app",
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default function RootLayout({ children }: LayoutProps<"/">)
+{
   return (
-    <html
-      lang="en"
-      className={ `${geistSans.variable} ${geistMono.variable} h-full antialiased` }
-    >
-      <body className="min-h-full flex flex-col">{ children }</body>
-    </html>
+    <html lang="en">
+      <body className={ `min-h-full ${ corm.className } antialiased flex flex-col text-3xl` }>
+        { children }
+      </body>
+    </html >
   );
 }
