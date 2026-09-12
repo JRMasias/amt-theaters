@@ -5,6 +5,7 @@ import Image from "next/image";
 import DesktopMenu from "./desktopmenu";
 import MobileMenu from "./mobilemenu";
 import { Search, Ticket, User2 } from "lucide-react";
+import clsx from "clsx";
 
 export default function Navbar()
 {
@@ -18,7 +19,7 @@ export default function Navbar()
      }, []);
 
      return (
-          <header className="p-3 w-full sticky top-0 z-50 bg-neutral-950">
+          <header className={ clsx("p-3 w-full sticky top-0 z-50", screenWidth <= 768 ? "bg-neutral-950" : "bg-linear-to-r from-neutral-950 from-80% to-[#815600]") }>
                { screenWidth <= 768 &&
                     <div className="flex items-center justify-between gap-2 text-sm w-full">
                          <div className="flex items-center">
@@ -37,7 +38,7 @@ export default function Navbar()
                          </div>
                     </div>
                }
-               { screenWidth > 768 && <></> }
+               { screenWidth > 768 && <DesktopMenu /> }
           </header>
      );
 }
