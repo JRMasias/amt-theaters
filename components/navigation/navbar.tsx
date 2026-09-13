@@ -30,7 +30,7 @@ export default function Navbar()
                               <Image alt="AMT Logo" src="/images/9.png" width={ 2135 } height={ 736 } className="w-20" />
                          </div>
                          <div className="flex items-center gap-4">
-                              <div className="flex items-center">
+                              <div className="flex items-center gap-0.5">
                                    <Ticket />
                                    <p>Showtimes</p>
                               </div>
