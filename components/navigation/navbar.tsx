@@ -6,6 +6,7 @@ import DesktopMenu from "./desktopmenu";
 import MobileMenu from "./mobilemenu";
 import { Search, Ticket, User2 } from "lucide-react";
 import clsx from "clsx";
+import Link from "next/link";
 
 export default function Navbar()
 {
@@ -26,15 +27,17 @@ export default function Navbar()
                               <MobileMenu />
                               <Search />
                          </div>
-                         <div>
+                         <Link href="/">
                               <Image alt="AMT Logo" src="/images/9.png" width={ 2135 } height={ 736 } className="w-20" />
-                         </div>
+                         </Link>
                          <div className="flex items-center gap-4">
-                              <div className="flex items-center gap-0.5">
+                              <Link href="/theaters" className="flex items-center gap-0.5">
                                    <Ticket />
                                    <p>Showtimes</p>
-                              </div>
-                              <User2 className="border-2 rounded-full" />
+                              </Link>
+                              <Link href="/login">
+                                   <User2 className="border-2 rounded-full" />
+                              </Link>
                          </div>
                     </div>
                }
