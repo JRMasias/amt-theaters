@@ -10,7 +10,7 @@ import Link from "next/link";
 
 export default function Navbar()
 {
-     const [ screenWidth, setScreenWidth ] = useState(0);
+     const [ screenWidth, setScreenWidth ] = useState(window.innerWidth);
 
      useEffect(() =>
      {
