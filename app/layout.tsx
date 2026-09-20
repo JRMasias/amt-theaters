@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, Geologica } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/navigation/navbar";
 
 const corm = Cormorant_Garamond({
   weight: [ "400", "700" ],
@@ -23,7 +22,6 @@ export default function RootLayout({ children }: LayoutProps<"/">)
   return (
     <html lang="en">
       <body className={ `min-h-full ${ corm.className } antialiased flex flex-col text-3xl` }>
-        <Navbar />
         { children }
       </body>
     </html >
