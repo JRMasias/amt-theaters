@@ -1,13 +1,8 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Geologica } from "next/font/google";
+import { Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
 
 const corm = Cormorant_Garamond({
-  weight: [ "400", "700" ],
-  subsets: [ "latin" ]
-});
-
-export const geo = Geologica({
   weight: [ "400", "700" ],
   subsets: [ "latin" ]
 });
