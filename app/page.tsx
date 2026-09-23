@@ -1,6 +1,6 @@
 import Footer from "@/components/Footer";
 import Navbar from "@/components/navigation/navbar";
-import NowPlayingSlideshow from "@/components/slideshow/NowPlayingSlideshow";
+import Attractions from "@/components/slideshow/Attractions";
 import Slideshow from "@/components/slideshow/Slideshow";
 
 export default function Home()
@@ -9,7 +9,7 @@ export default function Home()
     <main>
       <Navbar />
       <Slideshow />
-      <NowPlayingSlideshow />
+      <Attractions />
       <Footer />
     </main>
   );
