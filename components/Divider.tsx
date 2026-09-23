@@ -1,6 +1,6 @@
 interface DividerProps
 {
-     children: React.ReactNode;
+     children?: React.ReactNode;
 }
 
 export default function Divider({ children }: DividerProps)
