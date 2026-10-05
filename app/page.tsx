@@ -1,3 +1,4 @@
+import Adlist from "@/components/Adlist";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/navigation/navbar";
 import Attractions from "@/components/slideshow/Attractions";
@@ -10,6 +11,7 @@ export default function Home()
       <Navbar />
       <Slideshow />
       <Attractions />
+      <Adlist />
       <Footer />
     </main>
   );
