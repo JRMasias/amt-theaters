@@ -11,8 +11,8 @@ export default function Footer()
                     <Image src="/images/7.png" alt="AMC Logo" width={ 1536 } height={ 1024 } className="w-3/5 max-w-96" />
                </div>
                <div className="flex flex-col lg:flex-row justify-center items-center gap-2 lg:gap-8 w-full  bg-neutral-950 py-10">
-                    <button type="button" className="font-semibold border-2 border-[#ffaa00] rounded-lg text-[#ffaa00] p-2 cursor-pointer hover:bg-[#ffaa00] hover:text-neutral-950 transition-colors duration-300">Get Tickets</button>
-                    <button className="font-semibold border-2 border-[#ff2222] rounded-lg text-[#ff2222] p-2 cursor-pointer hover:bg-[#ff2222] hover:text-neutral-950 transition-colors duration-300">Order Food</button>
+                    <button type="button" className="border-2 border-[#ffaa00] rounded-lg text-[#ffaa00] py-2 px-4 cursor-pointer hover:bg-[#ffaa00] hover:text-neutral-950 transition-colors duration-300">Get Tickets</button>
+                    <button className="border-2 border-[#ff2222] rounded-lg text-[#ff2222] py-2 px-4 cursor-pointer hover:bg-[#ff2222] hover:text-neutral-950 transition-colors duration-300">Order Food</button>
                </div>
                <Divider>
                     <FaFacebookF className="text-2xl w-10 h-10 p-2 rounded-full border border-white text-white cursor-pointer hover:border-[#FFAA00] hover:text-[#FFAA00] hover:scale-105 transition-all duration-300" />
@@ -36,9 +36,10 @@ export default function Footer()
                </div>
                <div className="w-full flex flex-col justify-center items-center border-t border-neutral-700 py-5 bg-neutral-800 gap-4">
                     <Image src="/images/9.png" alt="AMC Logo" width={ 2135 } height={ 736 } className="w-24" />
-                    <p className="text-white text-center">
+                    <p className="text-white text-center text-lg">
                          &copy; 2026 AMT Theatre Theaters
                     </p>
+                    <p className="text-center text-neutral-50/10 text-xs">Page developed & designed by Johnathon Masias</p>
                </div>
           </footer>
      );

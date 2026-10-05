@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navigation/navbar";
 import Footer from "@/components/Footer";
 
-const corm = Cormorant_Garamond({
+const poppins = Poppins({
   weight: [ "400", "700" ],
   subsets: [ "latin" ]
 });
@@ -18,7 +18,7 @@ export default function RootLayout({ children }: LayoutProps<"/">)
 {
   return (
     <html lang="en">
-      <body className={ `min-h-full ${ corm.className } antialiased flex flex-col text-3xl` }>
+      <body className={ `min-h-full ${ poppins.className } antialiased flex flex-col text-2xl` }>
         <Navbar />
         { children }
         <Footer />
