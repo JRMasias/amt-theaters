@@ -5,6 +5,7 @@ import { geo } from "@/app/util/fonts";
 import { BsQuestionCircle, } from "react-icons/bs";
 import { useState } from "react";
 import clsx from "clsx";
+import { MONTHS } from "@/app/util/months";
 
 export default function Attractions()
 {
@@ -13,7 +14,6 @@ export default function Attractions()
      const [ currentMovieImg, setCurrentMovieImg ] = useState<string>("/images/Poster_1.png");
 
      const currentDate = new Date();
-     const months = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December", ];
 
      function handleSetAttractions(caller: string) 
      {
@@ -50,7 +50,7 @@ export default function Attractions()
                                    <h3>{ movie.rating }</h3>
                                    <BsQuestionCircle className="text-sm text-cyan-500" />
                               </div>
-                              <p className="text-sm text-neutral-50/30">Released { months[ movie.releaseDate.getMonth() ] } { movie.releaseDate.getDate() }, { movie.releaseDate.getFullYear() }</p>
+                              <p className="text-sm text-neutral-50/30">Released { MONTHS[ movie.releaseDate.getMonth() ] } { movie.releaseDate.getDate() }, { movie.releaseDate.getFullYear() }</p>
                          </div>
                          <button className="bg-red-600 text-2xl font-semibold px-8 py-4 rounded-full">Get Tickets</button>
                     </div>;
@@ -69,7 +69,7 @@ export default function Attractions()
                                    <h3>{ movie.rating }</h3>
                                    <BsQuestionCircle className="text-sm text-cyan-500" />
                               </div>
-                              <p className="text-sm text-neutral-50/30">Opening { months[ movie.releaseDate.getMonth() ] } { movie.releaseDate.getDate() }, { movie.releaseDate.getFullYear() }</p>
+                              <p className="text-sm text-neutral-50/30">Opening { MONTHS[ movie.releaseDate.getMonth() ] } { movie.releaseDate.getDate() }, { movie.releaseDate.getFullYear() }</p>
                          </div>
                          <button className="bg-red-600 text-xl font-semibold px-8 py-4 rounded-full">Preorder Tickets</button>
                     </div>;
