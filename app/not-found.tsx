@@ -1,4 +1,3 @@
-import Footer from "@/components/Footer";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -21,7 +20,6 @@ export default function NotFound()
                          <p>Click <Link href="/" className="text-[#22ccff] font-semibold">Here</Link> to go home</p>
                     </section>
                </div>
-               <Footer />
           </>
      );
 }
