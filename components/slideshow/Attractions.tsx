@@ -28,20 +28,22 @@ export default function Attractions()
      }
 
      return (
-          <div className={ `px-4 py-5 ${ geo.className } relative overflow-hidden` }>
+          <div className={ `px-4 py-5 md:py-10 ${ geo.className } relative overflow-hidden` }>
                <div style={ { backgroundImage: `url(${ currentMovieImg })`, backgroundPosition: "center" } } className="w-full h-full scale-1500 blur-sm absolute z-0"></div>
-               <h1 className="font-semibold relative z-10">Movies at AMT</h1>
-               <div className="flex flex-col justify-center gap-4 relative z-10">
-                    <div className="flex justify-center items-center text-xl text-black py-4">
-                         <button className={ clsx("w-1/2 text-white underline-offset-4", attractions == 0 && "underline") } onClick={ () => handleSetAttractions("now playing") }>Now Playing</button>
-                         <button className={ clsx("w-1/2 text-white underline-offset-4", attractions == 1 && "underline") } onClick={ () => handleSetAttractions("coming soon") }>Coming Soon</button>
+               <div className="md:flex justify-between items-center">
+                    <h1 className="font-semibold relative z-10 md:text-4xl">Movies at AMT</h1>
+                    <div className="flex flex-col justify-center gap-4 relative z-10 w-1/2">
+                         <div className="flex justify-center items-center text-xl py-4">
+                              <button className={ clsx("w-1/2 text-white underline-offset-4", attractions == 0 && "underline") } onClick={ () => handleSetAttractions("now playing") }>Now Playing</button>
+                              <button className={ clsx("w-1/2 text-white underline-offset-4", attractions == 1 && "underline") } onClick={ () => handleSetAttractions("coming soon") }>Coming Soon</button>
+                         </div>
                     </div>
                </div>
                { attractions == 0 && MOVIES.filter(movie => movie.releaseDate.getTime() <= currentDate.getTime()).map((movie, idx) =>
                {
 
-                    return <div key={ idx } className="px-5 pt-5 flex flex-col items-center relative z-10">
-                         <Image src={ movie.imgSrc[ 0 ] } alt="" width={ 1024 } height={ 1536 } />
+                    return <div key={ idx } className="px-5 pt-5 md:pt-15 flex flex-col items-center relative z-10">
+                         <Image src={ movie.imgSrc[ 0 ] } alt="" width={ 1024 } height={ 1536 } className="md:w-2/5" />
                          <div className="text-center text-xl pt-4 pb-8">
                               <h1 className="font-semibold text-2xl">{ movie.title }</h1>
                               <div className="flex items-center justify-evenly text-neutral-50/50">
@@ -59,8 +61,8 @@ export default function Attractions()
                { attractions == 1 && MOVIES.filter(movie => movie.releaseDate.getTime() > currentDate.getTime()).map((movie, idx) =>
                {
 
-                    return <div key={ idx } className="px-5 pt-5 flex flex-col items-center relative z-10">
-                         <Image src={ movie.imgSrc[ 0 ] } alt="" width={ 1024 } height={ 1536 } />
+                    return <div key={ idx } className="px-5 pt-5 md:pt-15 flex flex-col items-center relative z-10">
+                         <Image src={ movie.imgSrc[ 0 ] } alt="" width={ 1024 } height={ 1536 } className="md:w-2/5" />
                          <div className="text-center text-xl pt-4 pb-8">
                               <h1 className="font-semibold text-2xl">{ movie.title }</h1>
                               <div className="flex items-center justify-evenly text-neutral-50/50">

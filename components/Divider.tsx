@@ -7,7 +7,7 @@ export default function Divider({ children }: DividerProps)
 {
      return (
 
-          <div className="w-full border-t border-neutral-800 py-5 flex justify-evenly items-center bg-neutral-950">
+          <div className="w-full border-t border-neutral-800 py-5 md:py-10 flex justify-evenly items-center bg-neutral-950">
                { children }
           </div>
      );

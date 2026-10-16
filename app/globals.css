@@ -37,3 +37,12 @@ body
     1px -1px 1px black,
     -1px 1px 1px black;
 }
+
+.fixed-background
+{
+  background-image: url('/images/gradient_4_5.png');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 375%;
+}
