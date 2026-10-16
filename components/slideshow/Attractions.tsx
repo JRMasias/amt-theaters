@@ -39,7 +39,7 @@ export default function Attractions()
                { attractions == 0 && MOVIES.filter(movie => movie.releaseDate.getTime() <= currentDate.getTime()).map((movie, idx) =>
                {
 
-                    return <div key={ idx } className="p-4 flex flex-col items-center relative z-10">
+                    return <div key={ idx } className="px-5 pt-5 flex flex-col items-center relative z-10">
                          <Image src={ movie.imgSrc[ 0 ] } alt="" width={ 1024 } height={ 1536 } />
                          <div className="text-center text-xl pt-4 pb-8">
                               <h1 className="font-semibold text-2xl">{ movie.title }</h1>
