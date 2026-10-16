@@ -31,7 +31,7 @@ export default function MobileMenu()
                                    <Link href="/movies">See a Movie</Link>
                                    <Link href="/theaters">Find a Theater</Link>
                                    <Link href="/orders">Food & Drinks</Link>
-                                   <Link href="/orders">VIP</Link>
+                                   <Link href="/vip">VIP</Link>
                               </ul>
                          </nav>
                          <Search />
