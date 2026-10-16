@@ -1,79 +1,112 @@
-export const theaters = [
+export const THEATERS = [
      {
+          id: 0,
           city: "New York",
           state: "NY",
           name: "AMC Empire 25",
           address: "234 W 42nd St, New York, NY 10036",
           phone: "(212) 398-2000",
+          open: "10:00 AM",
+          close: "11:00 PM"
      },
      {
+          id: 1,
           city: "Los Angeles",
           state: "CA",
           name: "AMC Century City 16",
           address: "14150 Ventura Blvd, Los Angeles, CA 90064",
           phone: "(310) 442-2222",
+          open: "10:00 AM",
+          close: "11:00 PM"
      },
      {
+          id: 2,
           city: "Chicago",
           state: "IL",
           name: "AMC River East 21",
           address: "322 E Illinois St, Chicago, IL 60611",
           phone: "(312) 527-2000",
+          open: "10:00 AM",
+          close: "11:00 PM"
      },
      {
+          id: 3,
           city: "Houston",
           state: "TX",
           name: "AMC Houston 8",
           address: "5100 Westheimer Rd, Houston, TX 77056",
           phone: "(713) 960-2000",
+          open: "10:00 AM",
+          close: "11:00 PM"
      },
      {
+          id: 4,
           city: "San Francisco",
           state: "CA",
           name: "AMC Metreon 16",
           address: "135 4th St #3000, San Francisco, CA 94103",
           phone: "(415) 777-2000",
+          open: "10:00 AM",
+          close: "11:00 PM"
      },
      {
+          id: 5,
           city: "Miami",
           state: "FL",
           name: "AMC Aventura 24",
           address: "19501 Biscayne Blvd, Aventura, FL 33180",
           phone: "(305) 931-2000",
+          open: "10:00 AM",
+          close: "11:00 PM"
      },
      {
+          id: 6,
           city: "Seattle",
           state: "WA",
           name: "AMC Pacific Place 11",
           address: "600 Pine St, Seattle, WA 98101",
           phone: "(206) 682-2000",
+          open: "10:00 AM",
+          close: "11:00 PM"
      },
      {
+          id: 7,
           city: "Boston",
           state: "MA",
           name: "AMC Boston Common 19",
           address: "175 Tremont St, Boston, MA 02111",
           phone: "(617) 426-2000",
+          open: "10:00 AM",
+          close: "11:00 PM"
      },
      {
+          id: 8,
           city: "Atlanta",
           state: "GA",
           name: "AMC Phipps Plaza 14",
           address: "3500 Peachtree Rd NE, Atlanta, GA 30326",
           phone: "(404) 233-2000",
+          open: "10:00 AM",
+          close: "11:00 PM"
      },
      {
+          id: 9,
           city: "Denver",
           state: "CO",
           name: "AMC Cherry Creek 8",
           address: "3000 E 1st Ave, Denver, CO 80206",
           phone: "(303) 333-2000",
+          open: "10:00 AM",
+          close: "11:00 PM"
      },
      {
+          id: 10,
           city: "Philadelphia",
           state: "PA",
           name: "AMC Philadelphia 13",
           address: "1600 John F Kennedy Blvd, Philadelphia, PA 19103",
           phone: "(215) 567-2000",
+          open: "10:00 AM",
+          close: "11:00 PM"
      },
 ];
