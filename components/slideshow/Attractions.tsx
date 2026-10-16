@@ -6,6 +6,7 @@ import { BsQuestionCircle, } from "react-icons/bs";
 import { useState } from "react";
 import clsx from "clsx";
 import { MONTHS } from "@/app/util/months";
+import Button from "../ui/Button";
 
 export default function Attractions()
 {
@@ -52,7 +53,7 @@ export default function Attractions()
                               </div>
                               <p className="text-sm text-neutral-50/30">Released { MONTHS[ movie.releaseDate.getMonth() ] } { movie.releaseDate.getDate() }, { movie.releaseDate.getFullYear() }</p>
                          </div>
-                         <button className="bg-red-600 text-2xl font-semibold px-8 py-4 rounded-full">Get Tickets</button>
+                         <Button size="large">Get Tickets</Button>
                     </div>;
                }) }
                { attractions == 1 && MOVIES.filter(movie => movie.releaseDate.getTime() > currentDate.getTime()).map((movie, idx) =>
@@ -71,7 +72,7 @@ export default function Attractions()
                               </div>
                               <p className="text-sm text-neutral-50/30">Opening { MONTHS[ movie.releaseDate.getMonth() ] } { movie.releaseDate.getDate() }, { movie.releaseDate.getFullYear() }</p>
                          </div>
-                         <button className="bg-red-600 text-xl font-semibold px-8 py-4 rounded-full">Preorder Tickets</button>
+                         <Button size="large">Preorder Tickets</Button>
                     </div>;
                }) }
           </div>

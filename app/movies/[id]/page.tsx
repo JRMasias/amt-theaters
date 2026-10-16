@@ -25,7 +25,7 @@ export default function MoviesById()
                     </div>
                </div>
                {/* Movie info */ }
-               <div className="py-10 px-2">
+               <div className="py-5 px-2">
                     <div className="flex flex-nowrap gap-5 pb-3">
                          <Image src={ MOVIES[ 0 ].imgSrc[ 0 ] } alt={ MOVIES[ 0 ].title } width={ MOVIES[ 0 ].imgWidths[ 0 ] } height={ MOVIES[ 0 ].imgHeights[ 0 ] } className="w-1/2 border-4 border-white" />
                          <div className="text-base">
@@ -37,7 +37,7 @@ export default function MoviesById()
                     <div className="pt-10">
                          <h3 className="text-2xl font-semibold">Cast & Crew</h3>
                          { MOVIES[ 0 ].cast.map((castMember, index) => (
-                              <div key={ index } className="py-3">
+                              <div key={ index } className="pt-3">
                                    <p className="text-xl">{ castMember.name }</p>
                                    <p className="text-sm text-gray-500">{ castMember.role }</p>
                               </div>
