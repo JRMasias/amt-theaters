@@ -20,7 +20,7 @@ export default function Footer()
                     <FaTwitter className="text-2xl w-10 md:w-15 h-10 md:h-15 p-2 md:p-3 rounded-full border border-white text-white cursor-pointer hover:border-[#FFAA00] hover:text-[#FFAA00] hover:scale-105 transition-all duration-300" />
                     <FaYoutube className="text-2xl w-10 md:w-15 h-10 md:h-15 p-2 md:p-3 rounded-full border border-white text-white cursor-pointer hover:border-[#FFAA00] hover:text-[#FFAA00] hover:scale-105 transition-all duration-300" />
                </Divider>
-               <div className="w-full lg:w-4/5 lg:m-auto p-10 flex flex-col md:grid md:grid-cols-2 lg:flex lg:flex-row justify-evenly items-start bg-neutral-900">
+               <div className="w-full p-10 flex flex-col md:grid md:grid-cols-2 lg:flex lg:flex-row justify-evenly items-start gap-8 bg-neutral-900">
                     { links.map((link, idx) =>
                     {
                          return <div className="flex flex-col items-center md:items-start md:gap-1 w-full pb-10 lg:pb-0" key={ idx }>
